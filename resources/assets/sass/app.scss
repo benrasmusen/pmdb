@@ -1,0 +1,27 @@
+
+// Fonts
+@import url("https://fonts.googleapis.com/css?family=Raleway:300,400,600");
+
+// Variables
+@import "variables";
+
+$navbar-border-radius: 0;
+
+// Bootstrap
+@import "node_modules/bootstrap-sass/assets/stylesheets/bootstrap";
+
+body {
+	background-color:#fff;
+}
+
+h2.page-title {
+	margin-top:0;
+}
+
+.destroy-form {
+	display:inline;
+}
+
+.dataTables_wrapper .toolbar {
+	float:left;
+}
