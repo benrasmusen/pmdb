@@ -99,7 +99,7 @@ class AlbumController extends Controller
     public function destroy(Album $album)
     {
         if ($album->delete()) {
-            return back()->with('success', __('Album deleted successfully!'));
+            return redirect('albums')->with('success', __('Album deleted successfully!'));
         }
 
         return back()->with('error', __('There was an error deleting this album.'));
