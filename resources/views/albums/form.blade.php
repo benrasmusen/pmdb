@@ -33,12 +33,12 @@
 	</div>
 
 	<div class="form-group">
-		{!! Form::label('label') !!}
+		{!! Form::label('producer') !!}
 		{!! Form::text('producer', null, ['class' => 'form-control']) !!}
 	</div>
 
 	<div class="form-group">
-		{!! Form::label('label') !!}
+		{!! Form::label('genre') !!}
 		{!! Form::text('genre', null, ['class' => 'form-control']) !!}
 	</div>
 
