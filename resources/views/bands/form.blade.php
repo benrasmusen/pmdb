@@ -8,6 +8,11 @@
 	</div>
 
 	<div class="form-group">
+		{!! Form::label('website') !!}
+		{!! Form::url('website', null, ['class' => 'form-control']) !!}
+	</div>
+
+	<div class="form-group">
 		{!! Form::label('start_date') !!}
 		{!! Form::date('start_date', null, ['class' => 'form-control']) !!}
 	</div>

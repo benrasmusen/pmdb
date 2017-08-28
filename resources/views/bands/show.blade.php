@@ -6,6 +6,8 @@
 
 	<div class="row">
 		<dl class="col-sm-9">
+		  <dt>@lang('Webite')</dt>
+		  <dd><a href="{{ $band->website }}">{{ $band->website }}</a></dd>
 		  <dt>@lang('Start Date')</dt>
 		  <dd>{{ $band->start_date }}</dd>
 		  <dt>@lang('Still Active')</dt>

@@ -26,6 +26,7 @@ $factory->define(App\User::class, function (Faker\Generator $faker) {
 $factory->define(App\Band::class, function (Faker\Generator $faker) {
     return [
         'name' => $faker->catchPhrase,
+        'website' => 'http://' . $faker->domainName,
         'start_date' => $faker->date,
         'still_active' => $faker->boolean,
     ];
@@ -34,7 +35,7 @@ $factory->define(App\Band::class, function (Faker\Generator $faker) {
 $factory->define(App\Album::class, function (Faker\Generator $faker) {
 		$random_band = \App\Band::inRandomOrder()->first();
     return [
-    		'band_id' => $random_band->id,
+    	'band_id' => $random_band->id,
         'name' => $faker->catchPhrase,
         'recorded_date' => $faker->date,
         'release_date' => $faker->date,

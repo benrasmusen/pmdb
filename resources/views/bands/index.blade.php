@@ -8,6 +8,7 @@
 		<thead>
 			<tr>
 				<th>@lang('Name')</th>
+				<th>@lang('Website')</th>
 				<th>@lang('Start Date')</th>
 				<th>@lang('Still Active?')</th>
 				<th>@lang('Actions')</th>
@@ -17,6 +18,7 @@
 
 			<tr>
 				<td><a href="{{ route('bands.show', ['band' => $band]) }}">{{ $band->name }}</a></td>
+				<td><a href="{{ $band->website }}">{{ $band->website }}</a></td>
 				<td>{{ $band->start_date }}</td>
 				<td>
 					<span class="sr-only">{{ $band->still_active }}</span>

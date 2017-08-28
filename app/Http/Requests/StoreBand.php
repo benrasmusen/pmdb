@@ -25,6 +25,7 @@ class StoreBand extends FormRequest
     {
         return [
             'name' => 'required|max:191',
+            'website' => 'nullable|url',
         ];
     }
 
@@ -37,6 +38,7 @@ class StoreBand extends FormRequest
     {
         return [
             'name.required' => 'A band name is required',
+            'website.url' => 'Please enter a valid URL',
         ];
     }
 }

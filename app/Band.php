@@ -13,7 +13,8 @@ class Band extends Model
    * @var array
    */
   protected $fillable = [
-  	'name',
+    'name',
+  	'website',
   	'start_date',
   	'still_active'
   ];
